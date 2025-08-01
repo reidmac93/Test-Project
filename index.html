@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tic Tac Toe</h1>
+            <div class="game-info">
+                <div class="player-turn">
+                    <span id="current-player">X</span>'s Turn
+                </div>
+                <div class="score">
+                    <div class="score-item">
+                        <span class="player">X</span>
+                        <span id="score-x">0</span>
+                    </div>
+                    <div class="score-item">
+                        <span class="player">O</span>
+                        <span id="score-o">0</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="game-board" id="game-board">
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+            </div>
+
+            <div class="game-controls">
+                <button id="restart-btn" class="btn btn-primary">New Game</button>
+                <button id="reset-score-btn" class="btn btn-secondary">Reset Score</button>
+            </div>
+
+            <div class="winning-message" id="winning-message">
+                <div class="winning-text" id="winning-text"></div>
+                <button id="winning-button" class="btn btn-primary">Play Again</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
